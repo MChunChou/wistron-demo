@@ -1,0 +1,67 @@
+$inputcolor : #777;
+
+@function radiusFn($radius) {
+        
+}
+
+@mixin circle-style {
+    
+}
+
+@mixin center {
+    position: absolute;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    width: 100%;
+}
+
+.login {
+    
+    @include center();
+    
+    .login-form{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .login-log {
+        position: absolute;
+        left: 1%;
+        height: 90%;
+        width: 25%;
+    }
+
+    .cancle-status {
+
+    }
+}
+
+.circle-input {
+    margin: 10px 0;
+    border: 1px solid $inputcolor ;
+    border-radius: 10px;   
+    padding: 5px;     
+}
+
+.circle-button {
+    @extend .circle-input;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: black;
+        color: white
+    }
+}
+
+.show-redux-state {
+    position: fixed;
+    width: 30%;
+    right: 0;
+    top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: inline-grid;
+}
+

@@ -1,0 +1,12 @@
+@import '../../index.scss';
+
+.typescript-page {
+    // margin:20px;
+
+    section {
+        margin: 20px 0;
+    }
+    .tittle {
+        @extend %tittle-style;        
+    }
+}

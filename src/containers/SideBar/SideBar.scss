@@ -1,0 +1,42 @@
+.side-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;    
+    background-color: cadetblue;
+
+    .row-btn {
+        padding: 5px 0px;
+        margin: 10px 0px;
+        width: 90%;                
+    }
+
+    .radius-btn {
+        background-color: beige;
+        color: darkblue;
+        font-weight: 700;
+        font-size: 1.2em;
+        border: 1px solid rgb(139, 139, 139);
+        border-radius: 10px;  
+        letter-spacing: 2px;  
+    }
+
+    .shadow-btn {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    button {
+        &:hover{
+            transform: translateY(-.2em);
+        }
+
+        &:active {
+            color: white;
+            background-color: black;
+        }
+        
+    }
+}

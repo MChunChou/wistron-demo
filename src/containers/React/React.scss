@@ -1,0 +1,8 @@
+@import '../../index.scss';
+
+.react-page {
+
+    .tittle {
+        @extend %tittle-style;
+    }
+}

@@ -1,0 +1,12 @@
+.center {
+    display: grid;
+    justify-content: center;    
+}
+
+.demo-page {
+    position: relative;
+    overflow: auto;    
+    height: 100vh;
+    width: 100%;
+    @extend .center   
+}

@@ -1,0 +1,8 @@
+@import '../../index.scss';
+
+.redux-page {
+
+    .tittle {
+        @extend %tittle-style;
+    }
+}
