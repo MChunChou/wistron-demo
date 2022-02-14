@@ -5,6 +5,7 @@ import Helper from './userhelper'
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
 import type { RootState } from '../../store'
 import {addUser, removeUser, clearAll} from '../../store/userSlice'
+import { fetchAPI } from '../../store/thunkSlice'
 
 const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 
@@ -77,6 +78,11 @@ const Login: React.FC = () => {
                 {hu.map((v, i)=>{
                     return <div key={i}>{JSON.stringify(v)}</div> 
                 })}
+            </div>
+            <div className='library'>
+                <button onClick={()=>{                                        
+                    dispatch(fetchAPI('123'))
+                }}> Get Library </button>
             </div>
     </div>)
 }
